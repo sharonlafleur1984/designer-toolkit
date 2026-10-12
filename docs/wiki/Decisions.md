@@ -9,7 +9,7 @@ Newest first.
 
 - **Decided by:** Sharon
 - **Decision:** work in `designer-toolkit-code` happens on a branch and lands through a pull request. A "Protect main" rule set blocks direct pushes, deleting `main` and rewriting its history.
-- **Why:** each pull request gets a Netlify preview link to click through. Checks run before anything lands, and the description explains the change in plain language.
+- **Why:** checks run before anything lands, and each pull request explains the change in plain language. Sharon checks changes on her own computer before merging. Only bundles get a Netlify site, when one is sent.
 - **Other options:** committing straight to `main`. That keeps history and undo, but nothing gets checked or previewed first.
 
 </details>
