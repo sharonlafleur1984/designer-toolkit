@@ -4,7 +4,7 @@
 
 Sharon's workspace for prototyping in code. It frames any prototype and keeps every state, note, idea, copy decision, check and version in one place, then sends the finished states to Figma.
 
-**Hypothesis:** hiring managers and developers would trust Sharon's handoff more if they could click through every state of a real prototype, with its notes and decisions beside it.
+**Hypothesis:** stakeholders and developers would trust Sharon's handoff more if they could click through every state of a real prototype, with its notes and decisions beside it.
 
 **Problem to solve:** prototype work is scattered, so nobody (Sharon included) sees the whole picture, and clients want Figma files that coded prototypes don't produce.
 
@@ -15,7 +15,7 @@ Sharon's workspace for prototyping in code. It frames any prototype and keeps ev
 | Topic | Answer |
 |---|---|
 | **Where we are** | The original toolkit build runs. The toolbar and details page get rebuilt next. |
-| **Who it's for** | Sharon first. Hiring managers and developers see what she shares. |
+| **Who it's for** | Sharon first. Stakeholders and developers see what she shares. |
 | **Next milestone** | Shell rebuilt (not set yet) |
 
 Where we're going: [Roadmap](Roadmap). What it must do: [Spec](Spec). How it looks: [Skin](Skin). Every idea: [Backlog](Backlog). Why things were decided: [Decisions](Decisions).
