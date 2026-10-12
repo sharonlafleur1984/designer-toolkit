@@ -14,9 +14,9 @@ Sharon's workspace for prototyping in code. It frames any prototype and keeps ev
 
 | Topic | Answer |
 |---|---|
-| **Where we are** | The original toolkit build runs. The toolbar and details page get rebuilt next. |
+| **Where we are** | The original toolkit build runs. The toolbar gets rebuilt next, and the Figma capture gets tested. |
 | **Who it's for** | Sharon first. Stakeholders and developers see what she shares. |
-| **Next milestone** | Shell rebuilt (not set yet) |
+| **Next milestone** | [Prototype shell](https://github.com/sharonlafleur1984/designer-toolkit/issues/21) (not set yet) |
 
 Where we're going: [Roadmap](Roadmap). What it must do: [Spec](Spec). How it looks: [Skin](Skin). Every idea: [Backlog](Backlog). Why things were decided: [Decisions](Decisions).
 
