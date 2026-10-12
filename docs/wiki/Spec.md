@@ -55,7 +55,7 @@
 ## Sources of truth
 
 - **What are a prototype's versions, personas and states?** That prototype's `prototype-config.json`, in its own repo.
-- **Which prototypes does the shell list?** One registry file in the private `designer-toolkit-code` repo.
+- **Which prototypes does the shell list?** The ones Sharon has added by link or HTML file, saved in Supabase. Prototype code and data stay in each prototype's own repo.
 - **What notes, ideas, comments and docs links exist?** Supabase, one table each, tied to the prototype, state and version.
 - **What's the approved wording for a screen?** The copy table in Supabase, one row per string.
 - **What did each version change?** The versions table in Supabase, one row per deploy, with its permanent link.
@@ -80,8 +80,8 @@
 
 - **The toolbar** sits outside the prototype frame, so it never covers product screens. Version, persona and state are visible. Platform, add-ons and dev mode sit behind a "More" control.
 - **One shortcut** (Cmd or Ctrl and backslash) hides the toolbar for clean screenshots, matching the original.
-- **The details page** opens from the toolbar, with tabs for Notes, Ideas, Copy, Checks, Versions and Docs.
-- **Notes is the default tab,** and every tab lists its newest items first.
+- **The details page** opens from the toolbar, with tabs for Documentation, Comments, Ideas, Copy, Checks and Versions.
+- **Documentation is the default tab.** It holds the prototype's wiki, made of Markdown pages in folders. Every other tab lists its newest items first.
 - **States** show as a grid of thumbnails on the details page, each with its link, its check results and its Figma link.
 - **Light and dark** follow the viewer's system setting, with a toggle in the toolbar. The prototype's own theme toggle stays separate.
 - **Never shown:** former employers' personal data (names, emails, Slack IDs), client notes in any public view, and company-only internal links.
@@ -137,7 +137,6 @@ How states get to Figma. Full comparison on [Research](Research#htmltodesign-giv
 ## Open decisions
 
 - **How should states get to Figma?** The recommendation is to try one real prototype on html.to.design's free tier and on Figma's free capture. Then pay for html.to.design PRO only if its frames are clearly better.
-- **Who can leave notes on a shared link?** The recommendation is invited people only, signing in with an emailed link. No anonymous notes, so every note has a name.
 - **What's the one accent color?** The recommendation is to pick it from the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) once screenshots are in, and check it at 4.5:1 for text in both modes.
 - **Which free font stands in for Fields?** This is for the BambooHR prototypes. The recommendation will come with a side-by-side comparison.
 

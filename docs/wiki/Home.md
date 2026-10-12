@@ -23,7 +23,6 @@ Where we're going: [Roadmap](Roadmap). What it must do: [Spec](Spec). How it loo
 ## Needs your decision
 
 - How should states get to Figma?
-- Who can leave notes on a shared link?
 - What's the one accent color?
 - Which free font replaces Fields in the BambooHR prototypes?
 

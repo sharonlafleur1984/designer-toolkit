@@ -5,6 +5,66 @@
 Newest first.
 
 <details>
+<summary><b>Oct 12, 2026:</b> Every change goes through a pull request, and main is protected</summary>
+
+- **Decided by:** Sharon
+- **Decision:** work in `designer-toolkit-code` happens on a branch and lands through a pull request. A "Protect main" rule set blocks direct pushes, deleting `main` and rewriting its history.
+- **Why:** each pull request gets a Netlify preview link to click through. Checks run before anything lands, and the description explains the change in plain language.
+- **Other options:** committing straight to `main`. That keeps history and undo, but nothing gets checked or previewed first.
+
+</details>
+
+<details>
+<summary><b>Oct 12, 2026:</b> Reviewers comment by email invite and sign in with a magic link</summary>
+
+- **Decided by:** Sharon
+- **Decision:** comments are the one shared space. Sharon invites reviewers by email, one prototype at a time, and they sign in with a link sent to that email. Everything else in the toolkit is Sharon's alone.
+- **Why:** every comment has a real name, and only invited people see what others wrote.
+- **Other options:** anyone with the link leaves a comment after typing a name. Names can't be trusted, and anyone who gets the link reads every comment.
+- **Watch for:** Supabase's built-in email sender is for testing and sends only a few emails an hour. Real reviewers need a custom email sender.
+
+</details>
+
+<details>
+<summary><b>Oct 12, 2026:</b> Supabase for now, behind a layer that can be swapped</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the toolkit is for Sharon alone for now, with its data in Supabase. All reads and writes go through one storage layer in the code, so a future backend is a new adapter, not a rewrite.
+- **Why:** if the toolkit becomes a product, it would likely move to AWS (Amazon Web Services) under a business account. Sharon doesn't want to host other people's data on a personal account.
+- **Builds on:** the Oct 12 decision that Supabase is the backend.
+
+</details>
+
+<details>
+<summary><b>Oct 12, 2026:</b> A deploy ships the prototypes added at the time, frozen</summary>
+
+- **Decided by:** Sharon
+- **Decision:** whatever prototypes are in the toolkit when it deploys are the ones that ship, like an export. To leave one out of a deploy, remove it first. Removed prototypes stay under Recently added.
+- **Why:** what people review is exactly what was sent. It matches the decision that a version is one Netlify deploy.
+
+</details>
+
+<details>
+<summary><b>Oct 12, 2026:</b> Each prototype has its own everything</summary>
+
+- **Decided by:** Sharon
+- **Decision:** each prototype has its own documentation, comments, ideas, copy, checks and versions. Nothing is shared between prototypes.
+- **Why:** context sits one click from the screens it's about.
+- **Other options:** one toolkit-wide wiki with a folder per prototype.
+
+</details>
+
+<details>
+<summary><b>Oct 12, 2026:</b> The toolkit repos never hold a prototype</summary>
+
+- **Decided by:** Sharon
+- **Decision:** a prototype's code, config, data and bugs live in that prototype's own repo. All toolkit documentation lives in this repo, and `designer-toolkit-code` holds only the shell's code. The toolkit starts empty, and prototypes are added by link or HTML file, each with a nickname.
+- **Why:** the toolkit frames any prototype, the way Storybook can load any library, so nothing about one prototype belongs inside it.
+- **Replaces:** the old compiled Payroll Summit build in `designer-toolkit-code`, now removed. It lives on in the `payroll-summit` repo.
+
+</details>
+
+<details>
 <summary><b>Oct 12, 2026:</b> Supabase is the backend</summary>
 
 - **Decided by:** Sharon
