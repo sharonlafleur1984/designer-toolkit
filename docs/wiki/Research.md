@@ -196,6 +196,6 @@ Neither tool is needed for one writer. A strings file per prototype with key, te
 
 ## The real gap is linking, not tooling
 
-No product ties a heuristic finding, a copy decision and a frozen build together by story ID and version. The toolkit's details page, keyed on state and deploy link, closes that gap. It's the kind of thing a hiring manager reads as handoff skill rather than tool shopping.
+No product ties a heuristic finding, a copy decision and a frozen build together by story ID and version. The toolkit's details page, keyed on state and deploy link, closes that gap. It's the kind of thing a stakeholder reads as handoff skill rather than tool shopping.
 
 Confirm one thing before committing. Run one real prototype through html.to.design's free tier and one Figma capture before paying for either. No fidelity test on Sharon's own prototypes exists yet.
