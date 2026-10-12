@@ -1,29 +1,31 @@
 # Designer toolkit: Dashboard
 
-**Last updated:** October 11, 2026
+**Last updated:** October 12, 2026
 
-A shell that frames any prototype and lets a viewer switch its version, persona and page state from one toolbar, the way developers did during handoff.
+Sharon's workspace for prototyping in code. It frames any prototype and keeps every state, note, idea, copy decision, check and version in one place, then sends the finished states to Figma.
 
-**Hypothesis:** hiring managers and design leads would value trying the toolkit on real prototypes, because it shows how Sharon hands work to developers instead of describing it.
+**Hypothesis:** hiring managers and developers would trust Sharon's handoff more if they could click through every state of a real prototype, with its notes and decisions beside it.
 
-**Problem to solve:** a case study can say Sharon is good at developer handoff, but nobody can try the handoff tooling itself.
+**Problem to solve:** prototype work is scattered, so nobody (Sharon included) sees the whole picture, and clients want Figma files that coded prototypes don't produce.
 
-**What does success look like?** 3 of 3 first-time viewers switch a prototype's version, persona and page state in under a minute, with no instructions.
+**What does success look like?** For one real project, every prototype state lands in Figma in one pass with no redrawing, and 3 of 3 first-time viewers find a state, its notes and its version in under a minute.
 
 ## At a glance
 
-| | |
+| Topic | Answer |
 |---|---|
-| **Where we are** | The original toolkit build runs. Its icons and fonts still load from BambooHR's servers; the swap to bundled icons is underway. The toolbar itself was never in the build and gets rebuilt. |
-| **Who it's for** | Hiring managers, design leads and developers looking at Sharon's portfolio |
-| **Next milestone** | Runs on its own (not set yet) |
+| **Where we are** | The original toolkit build runs. The toolbar and details page get rebuilt next. |
+| **Who it's for** | Sharon first. Hiring managers and developers see what she shares. |
+| **Next milestone** | Shell rebuilt (not set yet) |
 
-Where we're going: [Roadmap](Roadmap). What it must do: [Spec](Spec). Why things were decided: [Decisions](Decisions).
+Where we're going: [Roadmap](Roadmap). What it must do: [Spec](Spec). How it looks: [Skin](Skin). Every idea: [Backlog](Backlog). Why things were decided: [Decisions](Decisions).
 
 ## Needs your decision
 
-- Which free font stands in for Fields?
-- Is a public demo of the BambooHR screens okay?
+- How should states get to Figma?
+- Who can leave notes on a shared link?
+- What's the one accent color?
+- Which free font replaces Fields in the BambooHR prototypes?
 
 Each one has a recommendation in [Spec, Open decisions](Spec#open-decisions).
 
@@ -32,5 +34,7 @@ Each one has a recommendation in [Spec, Open decisions](Spec#open-decisions).
 | What | Link |
 |---|---|
 | How Sharon works | [how-i-work](https://github.com/sharonlafleur1984/how-i-work) |
-| Design system (the shell's future theme) | [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton) |
+| Design system (the shell's theme) | [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton) |
+| Visual ideas for the skin | [FigJam: Designer Toolkit visual ideas](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) |
+| Tool research | [Research](Research) |
 | Every document | [Documents](Documents) |
