@@ -87,7 +87,7 @@ The [shell preview](https://github.com/sharonlafleur1984/designer-toolkit-code/t
 - **The toolbar** sits outside the prototype frame and holds only what the sidebar doesn't: the title, the contexts, the Screenshot and Prototype switch, dev mode, comments, properties and settings.
 - **The sidebar** picks the prototype and version, then lists milestones. Each milestone shows its status, description and due date, then its states grouped as default, error states and edge cases.
 - **Screenshot mode** shows the state in a laptop, tablet or phone frame. Comments work only here. **Prototype mode** runs the live prototype.
-- **The details panel** sits under the prototype, with tabs for Documentation, Notes and ideation, and Heuristic review. Each tab has its own side navigation and shows when it last synced.
+- **The details panel** sits under the prototype, with tabs for Documentation, Notes & ideation, and Heuristic review. Each tab has its own side navigation and shows when it last synced.
 - **Side drawers** are all one width: Comments, Properties (Behavior, Copy, Details), Inspect and Settings (Display, Share, Accessibility, Account).
 - **Light and dark** is a setting under Accessibility. The prototype's own theme toggle stays separate.
 - **One shortcut** (Cmd or Ctrl and backslash) hides the shell for clean screenshots, matching the original.

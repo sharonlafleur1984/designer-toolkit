@@ -19,7 +19,7 @@ Newest first.
   - **Screenshot and Prototype modes:** Screenshot mode shows the state in a device frame, and comments work only there. Deploy captures the screenshots.
   - **Properties:** tabs for Behavior, Copy and Details. Behavior is Gherkin that always starts with Given. Copy has Draft, Final and Reopened, and a reopened string keeps its reason and history. Clicking a string highlights it on the screen. Details shows the milestone, then versions, each with Compare.
   - **Compare:** two versions side by side, with numbered markers on what changed.
-  - **Details panel:** tabs for Documentation, Notes and ideation, and Heuristic review (renamed from Checks), each showing when it last synced.
+  - **Details panel:** tabs for Documentation, Notes & ideation, and Heuristic review (renamed from Checks), each showing when it last synced.
   - **Dev mode:** hover shows padding and the component name, and clicking opens that component in Storybook.
   - **Comments:** a glass card on top of the prototype, which can be dragged and replied to, like Figma's comment mode.
 - **Why:** Sharon reviewed each part in the preview before approving the build, so the build starts from a design that's already been tested on screen.
