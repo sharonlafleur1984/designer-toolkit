@@ -86,7 +86,7 @@ Storybook's theme options cover most of the skin: `appBg`, `appContentBg`, `appP
 
 ## Type
 
-The shell is a dense tool, so its type stays small and its hierarchy comes from color and weight more than size. The preview used 10 sizes and 4 weights. These rules bring it to 5 sizes and 3 weights. Prototypes keep their own type.
+The shell is a dense tool, so its type stays small and its hierarchy comes from color and weight more than size. The preview used 10 sizes and 4 weights. These rules bring it to a handful of sizes and 3 weights. Prototypes keep their own type.
 
 ### The scale
 
@@ -95,7 +95,7 @@ The shell is a dense tool, so its type stays small and its hierarchy comes from 
 | Title | 16px, 600, line height 1.3 | Heading face | Main text | Page titles in the details panel, the sign-in title |
 | Section | 13px, 600, line height 1.3 | Body face | Main text | Drawer titles, card titles, milestone deliverables |
 | Body | 12px, 400, line height 1.5 | Body face | Main text | Descriptions, comments, documentation, field values |
-| Label | 11px, 700, caps, 0.08em tracking, line height 1 | Body face | Secondary text | PROTOTYPE, VERSION, MILESTONE, PERSONA, tabs, table headers |
+| Label | 9px, 700, caps, 0.08em tracking, line height 1 | Body face | Secondary text | Field labels like PROTOTYPE, VERSION and PERSONA, and caps button sets like SCREENSHOT and PROTOTYPE |
 | Meta | 11px, 400, line height 1.4 | Body face | Tertiary text | Dates, last synced, state descriptions, pills |
 
 The brand name in the toolbar is the one exception: 14px in the heading face. Code uses 11px monospace.
@@ -109,7 +109,8 @@ The brand name in the toolbar is the one exception: 14px in the heading face. Co
 - **What matters more looks heavier.** The sidebar's Prototype and Version values are 600. The toolbar's Persona, Context and Device values are 400.
 - **Caps are for labels only.** Two words or fewer, never a sentence. The text stays sentence case underneath, and CSS sets the caps, so screen readers read words.
 - **The heading face never goes on controls.** Only the brand and titles use it.
-- **Nothing is smaller than 11px.**
+- **Caps labels can go down to 9px,** because caps and tracking keep them readable. Sentence-case text never goes below 10px, and body text stays 12px.
+- **Tabs and button sets in sentence case are 10px.** The details tabs under the prototype keep their larger size.
 - **Documentation text stays 45 to 75 characters a line** ([Baymard](https://baymard.com/blog/line-length-readability)).
 
 ### Typeface
