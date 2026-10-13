@@ -27,6 +27,7 @@ Every color comes from one family, so changing one means checking the rest. Valu
 | Main text | Cream | `#f6f2e1` |
 | Secondary text | Hampton | `#e2d8a5` |
 | Accent: selected, focus, the main action | Harvest Gold | `#e1a36f` |
+| Logo in the toolbar | Harvest Gold | `#e1a36f` |
 | Warning pill | Calico, dark tint | `#f0e0ba` on `#473c1e` |
 | Success pill | Sea Nymph, dark tint | `#cbe4e2` on `#1b3f3d` |
 | Info pill | Smalt Blue, dark tint | `#cee2e8` on `#173e48` |
