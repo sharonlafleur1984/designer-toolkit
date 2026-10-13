@@ -1,8 +1,20 @@
 # Decisions
 
-**Last updated:** October 12, 2026
+**Last updated:** October 13, 2026
 
 Newest first.
+
+<details>
+<summary><b>Oct 13, 2026:</b> States in Figma use Figma's frames and Figma's comments</summary>
+
+- **Decided by:** Sharon
+- **Decision:** a prototype can be linked to a Figma file. A state that's in Figma shows its Figma frame, and its comments are Figma's comments, so one thread shows up in both places. A state that isn't in Figma yet keeps the toolkit's own screenshot and comments, and its open comments move to Figma when the state does.
+- **Why:** Figma is where finished states go anyway, and stakeholders already review there. Two comment systems for the same screen would split the conversation.
+- **How it syncs:** comments sync both ways. Figma edits show up in the toolkit on the next refresh. Code changes reach Figma only when Sharon sends states, on a deploy or by a button, so designer edits made in Figma never get overwritten.
+- **Changes:** the Oct 12 decision on reviewer comments. For states in Figma, reviewers comment with their own Figma accounts, and Sharon lets them know. The email invite and magic link still cover states not yet in Figma.
+- **Watch for:** Figma's comment notifications don't include the pin position, so the toolkit fetches each new comment after it's notified ([Figma forum](https://forum.figma.com/ask-the-community-7/enhancement-request-include-client-meta-positioning-information-to-comment-webhook-28245)). Comment reads and writes go through [Figma's comments API](https://developers.figma.com/docs/rest-api/comments-endpoints/), which limits how often it can be called.
+
+</details>
 
 <details>
 <summary><b>Oct 12, 2026:</b> Every change goes through a pull request, and main is protected</summary>
