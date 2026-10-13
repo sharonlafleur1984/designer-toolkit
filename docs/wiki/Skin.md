@@ -83,9 +83,42 @@ The contrast floor, from WCAG 2.2 AA (Web Content Accessibility Guidelines, leve
 
 Storybook's theme options cover most of the skin: `appBg`, `appContentBg`, `appPreviewBg`, `appBorderColor`, `barBg`, and `colorSecondary` as the one accent ([Storybook theming](https://storybook.js.org/docs/configure/user-interface/theming)). The toolbar and panels can hide, which keeps the prototype in front ([Storybook](https://storybook.js.org/docs/configure/user-interface/features-and-behavior)).
 
+## Type
+
+The shell is a dense tool, so its type stays small and its hierarchy comes from color and weight more than size. The preview used 10 sizes and 4 weights. These rules bring it to 5 sizes and 3 weights. Prototypes keep their own type.
+
+### The scale
+
+| Role | Size and weight | Face | Color | Where it's used |
+|---|---|---|---|---|
+| Title | 16px, 600, line height 1.3 | Heading face | Main text | Page titles in the details panel, the sign-in title |
+| Section | 13px, 600, line height 1.3 | Body face | Main text | Drawer titles, card titles, milestone deliverables |
+| Body | 12px, 400, line height 1.5 | Body face | Main text | Descriptions, comments, documentation, field values |
+| Label | 11px, 700, caps, 0.08em tracking, line height 1 | Body face | Secondary text | PROTOTYPE, VERSION, MILESTONE, PERSONA, tabs, table headers |
+| Meta | 11px, 400, line height 1.4 | Body face | Tertiary text | Dates, last synced, state descriptions, pills |
+
+The brand name in the toolbar is the one exception: 14px in the heading face. Code uses 11px monospace.
+
+### Hierarchy rules
+
+- **One thing leads in each region.** In a panel, drawer or card, only its title uses Section or Title. Everything else steps down.
+- **Step down with color and weight first, size last.** Main, secondary and tertiary text do most of the work, so the scale stays small.
+- **No more than three levels in one region.** A fourth level means the region needs splitting or the content needs cutting.
+- **Selected is the accent at 600. Unselected is secondary text at 400.** That covers tabs, the tree and the mode switch.
+- **What matters more looks heavier.** The sidebar's Prototype and Version values are 600. The toolbar's Persona, Context and Device values are 400.
+- **Caps are for labels only.** Two words or fewer, never a sentence. The text stays sentence case underneath, and CSS sets the caps, so screen readers read words.
+- **The heading face never goes on controls.** Only the brand and titles use it.
+- **Nothing is smaller than 11px.**
+- **Documentation text stays 45 to 75 characters a line** ([Baymard](https://baymard.com/blog/line-length-readability)).
+
+### Typeface
+
+- **Body:** Atkinson Hyperlegible Next, already in the design system's toolkit theme. It's built for legibility at small sizes ([Braille Institute](https://www.brailleinstitute.org/freefont/)).
+- **Heading:** still open. The theme has Cinzel as a stand-in. The recommendation is Raela for headings only, if its web license allows it. Tracked in [#32](https://github.com/sharonlafleur1984/designer-toolkit/issues/32).
+
 ## Still open
 
-- **Type.** The typeface is still open. Tracked in [Spec, Open decisions](Spec#open-decisions).
+- **Heading typeface.** Tracked in [Spec, Open decisions](Spec#open-decisions).
 - **Full color ranges.** Retro needs 100 to 900 steps for every color before it goes into the design system.
 - **Light mode values.** The preview has a light mode, but its colors haven't been checked for contrast yet.
 
