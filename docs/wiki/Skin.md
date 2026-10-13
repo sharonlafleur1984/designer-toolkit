@@ -1,8 +1,8 @@
 # Skin: how the toolkit looks
 
-**Last updated:** October 12, 2026
+**Last updated:** October 13, 2026
 
-**Direction:** quiet neutral. Grayscale chrome, one accent, thin borders and lots of space, so the prototype is the only colorful thing on screen. Light and dark mode both.
+**Direction:** quiet and dark, in the Retro palette. Deep blue-green chrome, one gold accent, thin borders and lots of space, so the prototype stands out. Light and dark mode both. Chosen Oct 13, 2026 ([Decisions](Decisions)).
 
 The skin is a theme in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton), not a separate system. Visual ideas collect on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
 
@@ -16,6 +16,24 @@ Linear, Vercel and Figma all land on the same few moves.
 - **Fewer, softer borders.** Structure comes from spacing first.
 - **Panels that get out of the way.** Everything around the prototype can collapse or hide.
 
+## The Retro palette
+
+Every color comes from one family, so changing one means checking the rest. Values are from the [shell preview](https://github.com/sharonlafleur1984/designer-toolkit-code/tree/main/shell-preview), in dark mode.
+
+| Job | Color | Hex |
+|---|---|---|
+| Shell background | Near-black from Smalt Blue | `#051013` |
+| Behind the prototype | Lighter blue-green | `#1a2c31` |
+| Main text | Cream | `#f6f2e1` |
+| Secondary text | Hampton | `#e2d8a5` |
+| Accent: selected, focus, the main action | Harvest Gold | `#e1a36f` |
+| Warning pill | Calico, dark tint | `#f0e0ba` on `#473c1e` |
+| Success pill | Sea Nymph, dark tint | `#cbe4e2` on `#1b3f3d` |
+| Info pill | Smalt Blue, dark tint | `#cee2e8` on `#173e48` |
+| Danger | Brick red | `#bb635a` |
+
+Contrast on the shell background, checked against [WCAG 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html): Hampton 13.4:1, Harvest Gold 8.9:1, brick red 4.6:1. The warning pill's text is 8.3:1 on its tint.
+
 ## What the references did
 
 | Reference | The move worth borrowing | Look at it |
@@ -26,6 +44,8 @@ Linear, Vercel and Figma all land on the same few moves.
 | Figma UI3 | The work takes center stage, panels collapse, and the whole UI can hide. Input backgrounds came back for clarity. | [Writeup](https://www.figma.com/blog/behind-our-redesign-ui3/) · [panels](https://cdn.sanity.io/images/599r6htc/regionalized/78f63a332bd5337dc3ef5fa6648a9e1044fb4497-1608x1072.png?w=528&h=352&q=75&fit=max&auto=format) |
 
 ## Which grays to use
+
+The Retro surfaces above replace this pick. It stays here for the reasoning behind giving each step one job.
 
 **Recommended: Radix Colors `gray`.** It's a pure gray with almost no tint, so it won't clash with a prototype's own colors. It ships light, dark and transparent versions ([Radix](https://www.radix-ui.com/colors/docs/palette-composition/composing-a-palette)).
 
@@ -65,7 +85,8 @@ Storybook's theme options cover most of the skin: `appBg`, `appContentBg`, `appP
 
 ## Still open
 
-- **The accent color** gets picked from the FigJam board, then checked at 4.5:1 in both modes. Tracked in [Spec, Open decisions](Spec#open-decisions).
-- **Type.** The skin uses the design system's type scale. Nothing new here yet.
+- **Type.** The typeface is still open. Tracked in [Spec, Open decisions](Spec#open-decisions).
+- **Full color ranges.** Retro needs 100 to 900 steps for every color before it goes into the design system.
+- **Light mode values.** The preview has a light mode, but its colors haven't been checked for contrast yet.
 
 Full research: [Research](Research#quiet-chrome-uses-one-gray-scale-and-one-accent).
