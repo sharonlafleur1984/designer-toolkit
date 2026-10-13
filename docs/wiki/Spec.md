@@ -83,7 +83,7 @@
 - **The details page** opens from the toolbar, with tabs for Documentation, Comments, Ideas, Copy, Checks and Versions.
 - **Documentation is the default tab.** It holds the prototype's wiki, made of Markdown pages in folders. Every other tab lists its newest items first.
 - **States** show as a grid of thumbnails on the details page, each with its link, its check results and its Figma link.
-- **Light and dark** follow the viewer's system setting, with a toggle in the toolbar. The prototype's own theme toggle stays separate.
+- **The shell is always dark.** Reading surfaces, like the Documentation tab, can switch between light and dark. The prototype's own theme toggle stays separate.
 - **Never shown:** former employers' personal data (names, emails, Slack IDs), client notes in any public view, and company-only internal links.
 
 The look itself lives on [Skin](Skin).
@@ -137,7 +137,6 @@ How states get to Figma. Full comparison on [Research](Research#htmltodesign-giv
 ## Open decisions
 
 - **How should states get to Figma?** The recommendation is to try one real prototype on html.to.design's free tier and on Figma's free capture. Then pay for html.to.design PRO only if its frames are clearly better.
-- **What's the one accent color?** The recommendation is to pick it from the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) once screenshots are in, and check it at 4.5:1 for text in both modes.
 - **Which free font stands in for Fields?** This is for the BambooHR prototypes. The recommendation will come with a side-by-side comparison.
 
 ## On the bench
@@ -196,7 +195,7 @@ In dependency order, in four stages.
 10. Add the heuristic scoring.
 11. Test the Figma capture on one real prototype.
 12. Make the Figma capture one pass for every state.
-13. Move the shell onto the toolkit theme in Storybook, light and dark.
+13. Move the shell onto the Fireside theme in Storybook.
 
 ---
 
