@@ -10,6 +10,7 @@
 - [Skin](Skin)
 
 **Reference**
+- [How everything connects](Connections)
 - [Decisions](Decisions)
 - [Research](Research)
 - [Documents](Documents)
