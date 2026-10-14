@@ -4,7 +4,7 @@
 
 **Direction:** quiet and dark, in the Retro palette. Deep blue-green chrome, one gold accent, thin borders and lots of space, so the prototype stands out. Light and dark mode both. Chosen Oct 13, 2026 ([Decisions](Decisions)).
 
-The skin is a theme in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton), not a separate system. Visual ideas collect on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
+The skin is a theme in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton), not a separate system. Visual ideas, with Sharon's notes on what she loves and what loses her, are on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
 
 ## The recipe
 

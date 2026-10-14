@@ -204,7 +204,7 @@ In dependency order, in four stages.
 10. Add the heuristic scoring.
 11. Test the Figma capture on one real prototype.
 12. Make the Figma capture one pass for every state.
-13. Move the shell onto the toolkit theme in Storybook, light and dark.
+13. Move the shell onto the Retro theme in Storybook, light and dark.
 
 ---
 

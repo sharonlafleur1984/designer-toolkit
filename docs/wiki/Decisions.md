@@ -39,11 +39,24 @@ Newest first.
 </details>
 
 <details>
+<summary><b>Oct 12, 2026:</b> The skin is Fireside, and the shell is always dark (replaced)</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the toolkit uses Sharon's Fireside palette, and the shell is always dark. Reading surfaces, like the Documentation tab, can switch to light.
+- **Colors and their jobs:** rust is the one accent, with bright rust #D06C3E for buttons. Fire red means danger, lake green success, and honey a warning. Details on [Skin](Skin).
+- **Why:** a warm, calm frame, like a cabin at dusk, that keeps the prototype the brightest thing on screen. Bright rust outranks the honey warning, and it stays distinct from fire red for people with red-green color blindness.
+- **Other options:** a blue or violet accent, which felt cold. A gold accent. Warnings as a second fire red, which is hard to tell apart from danger.
+- **Replaces:** the Oct 12 decision that the skin is quiet neutral, in light and dark.
+- **Replaced by:** the Oct 13 decision that the shell preview is the design the rebuild matches, with the Retro palette.
+
+</details>
+
+<details>
 <summary><b>Oct 12, 2026:</b> Every change goes through a pull request, and main is protected</summary>
 
 - **Decided by:** Sharon
 - **Decision:** work in `designer-toolkit-code` happens on a branch and lands through a pull request. A "Protect main" rule set blocks direct pushes, deleting `main` and rewriting its history.
-- **Why:** each pull request gets a Netlify preview link to click through. Checks run before anything lands, and the description explains the change in plain language.
+- **Why:** checks run before anything lands, and each pull request explains the change in plain language. Sharon checks changes on her own computer before merging. Only bundles get a Netlify site, when one is sent.
 - **Other options:** committing straight to `main`. That keeps history and undo, but nothing gets checked or previewed first.
 
 </details>
@@ -150,12 +163,13 @@ Newest first.
 </details>
 
 <details>
-<summary><b>Oct 12, 2026:</b> The skin is quiet neutral, in light and dark</summary>
+<summary><b>Oct 12, 2026:</b> The skin is quiet neutral, in light and dark (replaced)</summary>
 
 - **Decided by:** Sharon
 - **Decision:** grayscale chrome with one accent, thin borders and lots of space, so the prototype is the only colorful thing on screen. Details on [Skin](Skin).
 - **Why:** the toolkit must never pull attention from the prototype.
 - **Other options:** pure monochrome (hard to show what's selected), or warm neutral (can shift how a prototype's colors look).
+- **Replaced by:** the Oct 12 decision that the skin is Fireside, and the shell is always dark.
 
 </details>
 
