@@ -18,7 +18,7 @@ Each piece is public or private on purpose. This table is the one to check befor
 | Private GitHub repos | Only you | Code, and internal planning: Jira links, problem statements, reviews, ideation |
 | Public GitHub repos | Anyone | Docs and code with no client work, no real names and no secrets |
 | Netlify sites | Anyone with the link, unless the site has a password | Only what a prototype needs to run |
-| Supabase | You, plus reviewers you invite to comment | What people do in the toolkit |
+| Supabase | You, plus the collaborators and reviewers you add by email | What people do in the toolkit |
 
 ## The repos
 
@@ -96,7 +96,7 @@ Supabase is the toolkit's database, sign-in and private file storage, in one pro
   - documentation pages, with every earlier version
   - prototypes an AI asked to add, waiting for your yes
   - private files, like uploaded HTML prototypes and screenshots, in the `toolkit-files` storage
-- **Who can read what:** access rules on every table (row-level security) let you see only your own rows. Reviewers see only the comments on prototypes they're invited to.
+- **Who can read what:** access rules on every table (row-level security) let you see only your own rows. Reviewers see only the comments on prototypes they're invited to. Planned: collaborators, added by email, see everything on their prototypes, and anyone else can request access ([decision](Decisions)).
 - **Sign-in:** by email link (a magic link), no password. Supabase's built-in email sender only sends a few emails an hour, so real reviewers need a custom sender.
 - **Keys:** the toolkit's build holds only the publishable key, which is safe in a browser. The secret key never goes in a repo or a build.
 - **Changes to the tables:** each change is a migration file in `supabase/migrations/` in [designer-toolkit-code](https://github.com/sharonlafleur1984/designer-toolkit-code), added by pull request.
