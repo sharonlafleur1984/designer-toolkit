@@ -1,8 +1,8 @@
 # Skin: how the toolkit looks
 
-**Last updated:** October 12, 2026
+**Last updated:** October 13, 2026
 
-**Direction:** Fireside. Autumn warmth, still water, room for the dark. The shell is always dark, and one rust accent is used rarely, so the prototype stays the brightest thing on screen.
+**Direction:** quiet and dark, in the Retro palette. Deep blue-green chrome, one gold accent, thin borders and lots of space, so the prototype stands out. Light and dark mode both. Chosen Oct 13, 2026 ([Decisions](Decisions)).
 
 The skin is a theme in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton), not a separate system. Visual ideas, with Sharon's notes on what she loves and what loses her, are on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
 
@@ -16,6 +16,25 @@ Linear, Vercel and Figma all land on the same few moves.
 - **Fewer, softer borders.** Structure comes from spacing first.
 - **Panels that get out of the way.** Everything around the prototype can collapse or hide.
 
+## The Retro palette
+
+Every color comes from one family, so changing one means checking the rest. Values are from the [shell preview](https://github.com/sharonlafleur1984/designer-toolkit-code/tree/main/shell-preview), in dark mode.
+
+| Job | Color | Hex |
+|---|---|---|
+| Shell background | Near-black from Smalt Blue | `#051013` |
+| Behind the prototype | Lighter blue-green | `#1a2c31` |
+| Main text | Cream | `#f6f2e1` |
+| Secondary text | Hampton | `#e2d8a5` |
+| Accent: selected, focus, the main action | Harvest Gold | `#e1a36f` |
+| Logo in the toolbar | Harvest Gold | `#e1a36f` |
+| Warning pill | Calico, dark tint | `#f0e0ba` on `#473c1e` |
+| Success pill | Sea Nymph, dark tint | `#cbe4e2` on `#1b3f3d` |
+| Info pill | Smalt Blue, dark tint | `#cee2e8` on `#173e48` |
+| Danger | Brick red | `#bb635a` |
+
+Contrast on the shell background, checked against [WCAG 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html): Hampton 13.4:1, Harvest Gold 8.9:1, brick red 4.6:1. The warning pill's text is 8.3:1 on its tint.
+
 ## What the references did
 
 | Reference | The move worth borrowing | Look at it |
@@ -25,54 +44,84 @@ Linear, Vercel and Figma all land on the same few moves.
 | Vercel Geist | Gray 100 to 1000 with fixed roles: 100 to 300 backgrounds, 400 to 600 borders, 900 and 1000 text. | [Geist colors](https://vercel.com/geist/colors) |
 | Figma UI3 | The work takes center stage, panels collapse, and the whole UI can hide. Input backgrounds came back for clarity. | [Writeup](https://www.figma.com/blog/behind-our-redesign-ui3/) · [panels](https://cdn.sanity.io/images/599r6htc/regionalized/78f63a332bd5337dc3ef5fa6648a9e1044fb4497-1608x1072.png?w=528&h=352&q=75&fit=max&auto=format) |
 
-## The Fireside palette
+## Which grays to use
 
-Sharon's six anchors, each a 100 to 900 ramp built on perceptual lightness, plus honey for warnings. The full ramps live in the design system's `designer-toolkit` theme.
+The Retro surfaces above replace this pick. It stays here for the reasoning behind giving each step one job.
 
-| Color | Source | Mood | Job in the toolkit |
-|---|---|---|---|
-| Near-black | 900 #1A1612 | Nightfall, grounding depth | The frame. 900 is the base, 800 panels and cards, 700 raised and hover. |
-| Cream | 100 #F8F0E8 | Moonlight, luminous canvas | Main text. Lighter steps for quieter text. |
-| Peach | 200 #E9CEB5 | Evening light, soft warmth | Supporting text and information |
-| Rust | 500 #AA6140 | Autumn earth, signature accent | The one accent: selected, focus and the main button. Buttons use bright rust #D06C3E. |
-| Fire red | 600 #BF2B07 | Crackling ember, focused energy | Danger, as solid fills or dark tints |
-| Lake green | 700 #304341 | Still water, quiet contrast | Success, and calm surfaces |
-| Honey | #E1C167 | Golden hour, gentle caution | Warnings only |
+**Recommended: Radix Colors `gray`.** It's a pure gray with almost no tint, so it won't clash with a prototype's own colors. It ships light, dark and transparent versions ([Radix](https://www.radix-ui.com/colors/docs/palette-composition/composing-a-palette)).
 
-### Rules that keep it calm
+Its 12 steps each have a role ([Radix scale](https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale)):
 
-- **Rust is rare.** One main button, the focus ring, the selected item. Used everywhere, rust on black reads as Halloween.
-- **Every status color has an icon or label.** Rust and fire red are the closest pair, and they need the icon to stay apart.
-- **Fire red is never text on the frame.** Its middle shades sit too close to bright rust.
-- **The strip around the prototype stays near-black,** so a prototype's own colors look true.
+| Step | Job in the toolkit |
+|---|---|
+| 1 to 2 | Page and panel backgrounds |
+| 3 to 5 | Hover, pressed and selected backgrounds |
+| 6 | Quiet dividers |
+| 7 | Input and control borders |
+| 8 | Focus rings and strong borders |
+| 11 | Secondary text |
+| 12 | Main text |
 
-Picked over a cool blue or violet accent and a gold accent. Bright rust outranks the honey warning, and it stays distinct from fire red for people with red-green color blindness, checked by simulating protanopia and deuteranopia.
+Alternatives: [Geist gray](https://vercel.com/geist/colors) and [shadcn/ui Neutral](https://ui.shadcn.com/docs/theming).
 
 ## Dark mode
 
-The shell is always dark. Reading surfaces, like the Documentation tab, can switch to light.
-
 - **Not an inverted light theme** ([Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/dark-mode)).
-- **Warm dark gray, not black.** The base is #1A1612. Material suggests a dark gray like #121212 ([Material](https://m2.material.io/design/color/dark-theme.html)).
+- **Dark gray, not black.** Material suggests #121212 for the base ([Material](https://m2.material.io/design/color/dark-theme.html)).
 - **Raised panels get lighter, not shadowed** (same source).
-- **Long reading gets softer text,** a cream instead of pure white, and a light option for the wiki.
+- **The accent gets its own dark value,** checked again for contrast.
 
 ## How quiet is too quiet
 
-The contrast floor, from WCAG 2.2 AA (Web Content Accessibility Guidelines, level AA). It holds on every surface.
+The contrast floor, from WCAG 2.2 AA (Web Content Accessibility Guidelines, level AA). It holds in light and dark, on every surface.
 
 - **Text:** 4.5:1, or 3:1 for large text ([W3C 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)).
 - **Anything that shows a control or its state** needs 3:1. That covers input borders, focus rings and icons that carry meaning ([W3C 1.4.11](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)).
-- **Dividers that are only decoration** can be fainter.
+- **Dividers that are only decoration** can be fainter. Step 6 is fine for those.
 - **Thin lines look fainter than their color** because of anti-aliasing, so test borders on screen, not only by the numbers (same source).
 
 ## In Storybook
 
 Storybook's theme options cover most of the skin: `appBg`, `appContentBg`, `appPreviewBg`, `appBorderColor`, `barBg`, and `colorSecondary` as the one accent ([Storybook theming](https://storybook.js.org/docs/configure/user-interface/theming)). The toolbar and panels can hide, which keeps the prototype in front ([Storybook](https://storybook.js.org/docs/configure/user-interface/features-and-behavior)).
 
+## Type
+
+The shell is a dense tool, so its type stays small and its hierarchy comes from color and weight more than size. The preview used 10 sizes and 4 weights. These rules bring it to a handful of sizes and 3 weights. Prototypes keep their own type.
+
+### The scale
+
+| Role | Size and weight | Face | Color | Where it's used |
+|---|---|---|---|---|
+| Title | 16px, 600, line height 1.3 | Heading face | Main text | Page titles in the details panel, the sign-in title |
+| Section | 13px, 600, line height 1.3 | Body face | Main text | Drawer titles, card titles, milestone deliverables |
+| Body | 12px, 400, line height 1.5 | Body face | Main text | Descriptions, comments, documentation, field values |
+| Label | 9px, 700, caps, 0.08em tracking, line height 1 | Body face | Secondary text | Field labels like PROTOTYPE, VERSION and PERSONA, and caps button sets like SCREENSHOT and PROTOTYPE |
+| Meta | 11px, 400, line height 1.4 | Body face | Tertiary text | Dates, last synced, state descriptions, pills |
+
+The brand name in the toolbar is the one exception: 14px in the heading face. Code uses 11px monospace.
+
+### Hierarchy rules
+
+- **One thing leads in each region.** In a panel, drawer or card, only its title uses Section or Title. Everything else steps down.
+- **Step down with color and weight first, size last.** Main, secondary and tertiary text do most of the work, so the scale stays small.
+- **No more than three levels in one region.** A fourth level means the region needs splitting or the content needs cutting.
+- **Selected is the accent at 600. Unselected is secondary text at 400.** That covers tabs, the tree and the mode switch.
+- **What matters more looks heavier.** The sidebar's Prototype and Version values are 600. The toolbar's Persona, Context and Device values are 400.
+- **Caps are for labels only.** Two words or fewer, never a sentence. The text stays sentence case underneath, and CSS sets the caps, so screen readers read words.
+- **The heading face never goes on controls.** Only the brand and titles use it.
+- **Caps labels can go down to 9px,** because caps and tracking keep them readable. Sentence-case text never goes below 10px, and body text stays 12px.
+- **Tabs and button sets in sentence case are 10px.** The details tabs under the prototype keep their larger size.
+- **Documentation text stays 45 to 75 characters a line** ([Baymard](https://baymard.com/blog/line-length-readability)).
+
+### Typeface
+
+- **Body:** Atkinson Hyperlegible Next, already in the design system's toolkit theme. It's built for legibility at small sizes ([Braille Institute](https://www.brailleinstitute.org/freefont/)).
+- **Heading:** still open. The theme has Cinzel as a stand-in. The recommendation is Raela for headings only, if its web license allows it. Tracked in [#32](https://github.com/sharonlafleur1984/designer-toolkit/issues/32).
+
 ## Still open
 
-- **Type.** The typeface isn't chosen. The theme uses After Graduation's type for now.
-- **The glass and light recipe.** "Natural" can only be judged on screen, so three versions get built in Storybook for Sharon to react to.
+- **Heading typeface.** Tracked in [Spec, Open decisions](Spec#open-decisions).
+- **Full color ranges.** Retro needs 100 to 900 steps for every color before it goes into the design system.
+- **Light mode values.** The preview has a light mode, but its colors haven't been checked for contrast yet.
 
 Full research: [Research](Research#quiet-chrome-uses-one-gray-scale-and-one-accent).

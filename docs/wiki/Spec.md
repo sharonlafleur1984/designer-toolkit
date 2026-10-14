@@ -1,8 +1,8 @@
 # Designer toolkit: Spec
 
-**Last updated:** October 12, 2026
+**Last updated:** October 13, 2026
 
-**Status:** draft, low fidelity. This spec agrees on a direction. Screens and components come after.
+**Status:** draft. The design to match is the [shell preview](https://github.com/sharonlafleur1984/designer-toolkit-code/tree/main/shell-preview), approved Oct 13, 2026. See [Decisions](Decisions).
 
 ## TL;DR
 
@@ -14,6 +14,8 @@
 
 - **Shell:** the toolbar and panels around a prototype. It owns no product screens.
 - **Prototype:** a product build the shell frames, like the client portal.
+- **Milestone:** one deliverable of a prototype, with a status, a due date, its versions and its states.
+- **Context:** who is looking and how: the persona, the kind of user (existing, first time or expired) and the device.
 - **State:** one named view of a screen, like empty, loading, error or a persona's view. Each state has its own link.
 - **Details page:** the page behind each prototype that holds its documentation, comments, ideas, copy, checks and versions.
 - **Version:** one Netlify deploy, made before a meeting or a share.
@@ -66,11 +68,13 @@
 
 ## Fields and editors
 
-- **Version, persona, state:** the viewer picks them in the toolbar, or they arrive from a shared link.
+- **Milestone, version and state:** the viewer picks them in the sidebar, or they arrive from a shared link.
+- **Persona, context and device:** the viewer picks them in the toolbar. Each one can be hidden in Settings.
 - **The choices in each list** come from the prototype's config file. Nobody types them in the shell.
 - **Comments from reviewers:** people Sharon invites by email to one prototype write them, after signing in with a magic link. Sharon may resolve or hide them.
 - **Documentation and ideas:** Sharon writes them on the details page. Documentation is a wiki of Markdown pages in folders, and each edit saves the earlier copy. Each idea keeps its date and the version it was written against, filled in by the toolkit.
-- **Copy strings:** each has a key, the text, a status (draft, in review, final) and a note. Sharon fills the text and status. The key is set once in code.
+- **Copy strings:** each has a key, the text, a status (draft, final or reopened) and a note. Reopening a final string asks for a reason, and the string keeps its history. Sharon fills the text and status. The key is set once in code.
+- **Behavior:** each state has a title, a description and Gherkin steps that start with Given. Sharon writes them.
 - **Version entry:** the deploy link and date are filled by the deploy. Sharon may add a summary. The comments and documentation changes since the last version are pulled in automatically, and Sharon may edit the summary.
 - **Accessibility result:** filled by the automated check on each state. Nobody types it.
 - **Heuristic score:** Sharon scores each of Nielsen's 10 heuristics from 0 to 4 per state. A second pass by AI may suggest scores, and Sharon overwrites them.
@@ -78,12 +82,15 @@
 
 ## Page design
 
-- **The toolbar** sits outside the prototype frame, so it never covers product screens. Version, persona and state are visible. Platform, add-ons and dev mode sit behind a "More" control.
-- **One shortcut** (Cmd or Ctrl and backslash) hides the toolbar for clean screenshots, matching the original.
-- **The details page** opens from the toolbar, with tabs for Documentation, Comments, Ideas, Copy, Checks and Versions.
-- **Documentation is the default tab.** It holds the prototype's wiki, made of Markdown pages in folders. Every other tab lists its newest items first.
-- **States** show as a grid of thumbnails on the details page, each with its link, its check results and its Figma link.
-- **The shell is always dark.** Reading surfaces, like the Documentation tab, can switch between light and dark. The prototype's own theme toggle stays separate.
+The [shell preview](https://github.com/sharonlafleur1984/designer-toolkit-code/tree/main/shell-preview) shows all of this working.
+
+- **The toolbar** sits outside the prototype frame and holds only what the sidebar doesn't: the title, the contexts, the Screenshot and Prototype switch, dev mode, comments, properties and settings.
+- **The sidebar** picks the prototype and version, then lists milestones. Each milestone shows its status, description and due date, then its states grouped as default, error states and edge cases.
+- **Screenshot mode** shows the state in a laptop, tablet or phone frame. Comments work only here. **Prototype mode** runs the live prototype.
+- **The details panel** sits under the prototype, with tabs for Documentation, Notes & ideation, and Heuristic review. Each tab has its own side navigation and shows when it last synced.
+- **Side drawers** are all one width: Comments, Properties (Behavior, Copy, Details), Inspect and Settings (Display, Share, Accessibility, Account).
+- **Light and dark** is a setting under Accessibility. The prototype's own theme toggle stays separate.
+- **One shortcut** (Cmd or Ctrl and backslash) hides the shell for clean screenshots, matching the original.
 - **Never shown:** former employers' personal data (names, emails, Slack IDs), client notes in any public view, and company-only internal links.
 
 The look itself lives on [Skin](Skin).
@@ -137,6 +144,8 @@ How states get to Figma. Full comparison on [Research](Research#htmltodesign-giv
 ## Open decisions
 
 - **How should states get to Figma?** The recommendation is to try one real prototype on html.to.design's free tier and on Figma's free capture. Then pay for html.to.design PRO only if its frames are clearly better.
+- **Which typeface does the shell use?** The recommendation is Raela only for headings, if its web license allows it, with a plainer typeface for body text.
+- **Does dev mode stay on in Prototype mode?** The recommendation is yes, with clicks in the prototype paused while it's on.
 - **Which free font stands in for Fields?** This is for the BambooHR prototypes. The recommendation will come with a side-by-side comparison.
 
 ## On the bench
@@ -195,7 +204,7 @@ In dependency order, in four stages.
 10. Add the heuristic scoring.
 11. Test the Figma capture on one real prototype.
 12. Make the Figma capture one pass for every state.
-13. Move the shell onto the Fireside theme in Storybook.
+13. Move the shell onto the Retro theme in Storybook, light and dark.
 
 ---
 

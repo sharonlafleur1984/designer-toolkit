@@ -5,6 +5,28 @@
 Newest first.
 
 <details>
+<summary><b>Oct 13, 2026:</b> The shell preview is the design the rebuild matches</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the shell preview in [`designer-toolkit-code/shell-preview`](https://github.com/sharonlafleur1984/designer-toolkit-code/tree/main/shell-preview) is the design the real shell gets rebuilt to match. Its screenshots are the baseline.
+- **What it settled:**
+  - **Skin:** the Retro palette. Details on [Skin](Skin). It replaces the Fireside direction.
+  - **Milestones:** each prototype is split into milestones. Each one has a status, a deliverable, a due date, its versions and its states.
+  - **States:** grouped as default, error states and edge cases, with counts. A group with one state starts open, and a group with more starts closed.
+  - **Contexts:** Persona, Context (existing, first time or expired user) and Device (desktop, tablet or phone) exist from the start. Each one can be shown or hidden in Settings. Logged out is an edge case, not a milestone.
+  - **Toolbar:** holds only what the sidebar doesn't: the title, contexts, the Screenshot and Prototype switch, dev mode, comments, properties and settings.
+  - **Settings:** tabs for Display, Share, Accessibility and Account. The share link, deploy and sign-in live here. Light and dark mode is under Accessibility.
+  - **Screenshot and Prototype modes:** Screenshot mode shows the state in a device frame, and comments work only there. Deploy captures the screenshots.
+  - **Properties:** tabs for Behavior, Copy and Details. Behavior is Gherkin that always starts with Given. Copy has Draft, Final and Reopened, and a reopened string keeps its reason and history. Clicking a string highlights it on the screen. Details shows the milestone, then versions, each with Compare.
+  - **Compare:** two versions side by side, with numbered markers on what changed.
+  - **Details panel:** tabs for Documentation, Notes & ideation, and Heuristic review (renamed from Checks), each showing when it last synced.
+  - **Dev mode:** hover shows padding and the component name, and clicking opens that component in Storybook.
+  - **Comments:** a glass card on top of the prototype, which can be dragged and replied to, like Figma's comment mode.
+- **Why:** Sharon reviewed each part in the preview before approving the build, so the build starts from a design that's already been tested on screen.
+
+</details>
+
+<details>
 <summary><b>Oct 13, 2026:</b> States in Figma use Figma's frames and Figma's comments</summary>
 
 - **Decided by:** Sharon
@@ -17,7 +39,7 @@ Newest first.
 </details>
 
 <details>
-<summary><b>Oct 12, 2026:</b> The skin is Fireside, and the shell is always dark</summary>
+<summary><b>Oct 12, 2026:</b> The skin is Fireside, and the shell is always dark (replaced)</summary>
 
 - **Decided by:** Sharon
 - **Decision:** the toolkit uses Sharon's Fireside palette, and the shell is always dark. Reading surfaces, like the Documentation tab, can switch to light.
@@ -25,6 +47,7 @@ Newest first.
 - **Why:** a warm, calm frame, like a cabin at dusk, that keeps the prototype the brightest thing on screen. Bright rust outranks the honey warning, and it stays distinct from fire red for people with red-green color blindness.
 - **Other options:** a blue or violet accent, which felt cold. A gold accent. Warnings as a second fire red, which is hard to tell apart from danger.
 - **Replaces:** the Oct 12 decision that the skin is quiet neutral, in light and dark.
+- **Replaced by:** the Oct 13 decision that the shell preview is the design the rebuild matches, with the Retro palette.
 
 </details>
 

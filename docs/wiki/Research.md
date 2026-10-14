@@ -176,7 +176,7 @@ But **deploys are deleted after 30 days** (90 on paid plans), and a deleted perm
 
 For the changelog, Changesets bumps the version and writes changelog entries. It works for single-package repos ([Changesets](https://github.com/changesets/changesets/blob/main/README.md)). Storybook MDX (Markdown that can hold components) can render a CHANGELOG.md as a docs page ([Storybook](https://github.com/storybookjs/storybook/blob/next/docs/writing-docs/mdx.mdx)), so it shows inside the toolkit.
 
-### Notes and ideation
+### Notes & ideation
 
 Notes that live inside the artifact survive handoff.
 
