@@ -1,8 +1,39 @@
 # Decisions
 
-**Last updated:** October 13, 2026
+**Last updated:** October 14, 2026
 
 Newest first.
+
+<details>
+<summary><b>Oct 14, 2026:</b> Collaborators see everyday words, and "Saved" means saved</summary>
+
+- **Decided by:** Sharon
+- **Decision:** saving is a choice, never automatic. "Saved", "Sent for approval" and "Approved" show only after the code confirms them. A failed save says why and keeps the text in edit mode.
+- **Words:** collaborators see project docs, project, sent for approval, approve and History. GitHub's words (wiki, repo, pull request, merge, commit history) show only in owner-only settings. The full message list is on [Spec](Spec#saving-and-approval).
+- **History:** each document has a History page, saved in Supabase. Restoring an older version makes a new change that goes through approval. A page waiting for approval is read-only for everyone except its editor.
+- **Why:** a "Saved" that isn't true loses work someone thinks is safe. Collaborators may never have a GitHub account, so GitHub's words would mean nothing to them.
+
+</details>
+
+<details>
+<summary><b>Oct 14, 2026:</b> Milestones come from a linked repo or from specs, side by side</summary>
+
+- **Decided by:** Sharon
+- **Decision:** a prototype's milestones come from its linked repo's GitHub milestones, from specs written in the toolkit, or both. Each is labeled with its source, and the two are never merged.
+- **Linking a repo:** a "Connect this prototype" review shows what was found and where, and Sharon confirms it. Nothing is guessed.
+- **Later:** the repo's issues and Project board, and specs from its wiki.
+
+</details>
+
+<details>
+<summary><b>Oct 14, 2026:</b> The heuristic review is automated scans plus an AI review</summary>
+
+- **Decided by:** Sharon
+- **Decision:** each page state gets automated accessibility scans (measured) and an AI heuristic review (judgment). Each AI finding has a severity from 0 to 4, a location and a fix. It stays labeled "AI review" until the owner keeps, edits or dismisses it.
+- **Why:** the label keeps judgment from passing as measurement.
+- **Changes:** the Oct 12 decision that Sharon scores each of Nielsen's 10 heuristics per state. The AI now drafts the findings, and Sharon decides on each one.
+
+</details>
 
 <details>
 <summary><b>Oct 13, 2026:</b> States in Figma use Figma's frames and Figma's comments</summary>
