@@ -1,6 +1,6 @@
 # Documents
 
-**Last updated:** October 12, 2026
+**Last updated:** October 14, 2026
 
 Every document in this project's repository, and when to open it. If none of these match what you need, don't open anything else.
 
@@ -15,6 +15,7 @@ Private files aren't here. They're listed in Sharon's private Notion document in
 | [Spec](Spec) | Checking what the toolkit must do and how each requirement gets checked |
 | [Skin](Skin) | Checking how the toolkit looks, in light and dark |
 | [Backlog](Backlog) | Looking for an idea, or adding one |
+| [How everything connects](Connections) | Checking how GitHub, Netlify and Supabase fit together, or changing a Netlify site or Supabase |
 | [Decisions](Decisions) | Checking why something was decided |
 | [Research](Research) | Checking the sources behind a tool or design choice |
 
