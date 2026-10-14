@@ -58,8 +58,7 @@ You're signed in to the Netlify command-line tool on your computer. It lists sit
 - **Build:** `netlify.toml` copies the repo into `dist`, leaving out `home/project`, `home/prototype-details`, `home/toolkit-data.json` and `scripts/`. Those hold internal planning and Jira links.
 - **Reads across sites:** `/home/prototype-config.json`
 - **In the toolkit:** added by its link. Its planning (3 problems, 15 milestones, 30 page states) comes from `home/toolkit-data.json` in the private repo, not from this site.
-- **Status, Oct 14:** Exposed. The `netlify.toml` above is waiting in [summit-challenges #5](https://github.com/sharonlafleur1984/summit-challenges/pull/5), and until it merges the site publishes the planning files.
-- **After #5 merges:** earlier deploys and preview links still hold the planning files until they're deleted.
+- **Status, Oct 14:** Live, with the planning files left out ([summit-challenges #5](https://github.com/sharonlafleur1984/summit-challenges/pull/5)). They were public for a few hours before that, so the 8 older deploys and preview links that held them were deleted.
 
 ### Client Portal
 
