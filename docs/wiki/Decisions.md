@@ -1,8 +1,40 @@
 # Decisions
 
-**Last updated:** October 13, 2026
+**Last updated:** October 14, 2026
 
 Newest first.
+
+<details>
+<summary><b>Oct 14, 2026:</b> Documents sync both ways with the repo, through pull requests</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the toolkit always shows the latest documentation, specs and milestones from the prototype's repo. A document edited or added in the toolkit becomes a pull request on the repo's `docs/wiki`, and merging it updates the wiki.
+- **Until it's merged:** the page says it's waiting for a merge, with a link to the pull request.
+- **Conflicts are resolved in the repo, never in the toolkit.** If a pull request conflicts, the toolkit says so and links to it on GitHub.
+- **Netlify only runs the prototype,** for anyone who isn't on Sharon's computer. Documentation comes from GitHub, and comments, approvals and people from Supabase.
+- **Why:** one source of truth for documents, and GitHub already handles reviews and conflicts.
+- **Needs:** the GitHub connection, to write to repos.
+
+</details>
+
+<details>
+<summary><b>Oct 14, 2026:</b> Collaborators are added by email in the toolkit, and can ask for access</summary>
+
+- **Decided by:** Sharon
+- **Decision:** each prototype has two groups, both added by email. People are managed in one place shown in two spots: a **Share** button in the toolbar, and **Settings → Prototypes → People**. Both show the same list and controls.
+  - **Collaborators** see everything: documentation, notes and ideation, heuristic reviews and comments.
+  - **Reviewers** see comments only.
+- **How they get in:** an email with a sign-in link (a magic link). No password, and no GitHub account needed. The email they sign in with has to match the one they were added with.
+- **Request access:** someone who signs in with an email that isn't on the list sees that they don't have access yet, with a Request access button. Sharon gets the request at the top of Share (and People), and approving it sends them a sign-in link.
+- **Who sees what there:** only the owner can add or remove people and answer requests. Collaborators see the list, with a note that only the owner can add people. Reviewers don't see Share or People. Supabase's access rules enforce this too, so hiding the controls isn't the only lock.
+- **Saved in Supabase:** the lists live in the database, so code updates and new deploys never change them.
+- **GitHub:** the toolkit can fill the collaborator list from a linked repo's collaborators when their emails are visible, but the toolkit's list decides access.
+- **Every private page says so at the top:** "Private to you and this prototype's collaborators." A prototype with no collaborators says "Private to you."
+- **Why:** collaborators may never make a GitHub account, and GitHub usually hides people's emails, so GitHub can't reliably say who's who. An email list that Sharon controls can.
+- **Other options:** reading access from GitHub repo collaborators (misses anyone without an account); sign in with GitHub only (shuts out people without an account).
+- **Changes:** the Oct 12 decision that only comments are shared. Reviewers still see only comments, and collaborators are a new, wider group.
+
+</details>
 
 <details>
 <summary><b>Oct 13, 2026:</b> States in Figma use Figma's frames and Figma's comments</summary>
