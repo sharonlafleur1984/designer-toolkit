@@ -5,6 +5,19 @@
 Newest first.
 
 <details>
+<summary><b>Oct 14, 2026:</b> Documents sync both ways with the repo, through pull requests</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the toolkit always shows the latest documentation, specs and milestones from the prototype's repo. A document edited or added in the toolkit becomes a pull request on the repo's `docs/wiki`, and merging it updates the wiki.
+- **Until it's merged:** the page says it's waiting for a merge, with a link to the pull request.
+- **Conflicts are resolved in the repo, never in the toolkit.** If a pull request conflicts, the toolkit says so and links to it on GitHub.
+- **Netlify only runs the prototype,** for anyone who isn't on Sharon's computer. Documentation comes from GitHub, and comments, approvals and people from Supabase.
+- **Why:** one source of truth for documents, and GitHub already handles reviews and conflicts.
+- **Needs:** the GitHub connection, to write to repos.
+
+</details>
+
+<details>
 <summary><b>Oct 14, 2026:</b> Collaborators are added by email in the toolkit, and can ask for access</summary>
 
 - **Decided by:** Sharon
