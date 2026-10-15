@@ -1,8 +1,19 @@
 # Decisions
 
-**Last updated:** October 14, 2026
+**Last updated:** October 15, 2026
 
 Newest first.
+
+<details>
+<summary><b>Oct 15, 2026:</b> Connecting a prototype suggests, and never converts</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the first time a repo is linked, the toolkit reads it and lists what it found, with where and how sure. Each finding is Use it, Change it or Skip. Setups from other prototype tools are matched to ours as suggestions. Anything with no match keeps its own name.
+- **Changes to the prototype's repo:** only as a pull request its owner approves.
+- **Why:** people bring work they've already organized. Converting it quietly loses their structure and their trust.
+- **Plan:** [Connect a prototype](Connect-a-prototype)
+
+</details>
 
 <details>
 <summary><b>Oct 14, 2026:</b> Collaborators see everyday words, and "Saved" means saved</summary>
