@@ -3,6 +3,7 @@
 **Plan**
 - [Roadmap](Roadmap)
 - [Spec](Spec)
+- [Connect a prototype](Connect-a-prototype)
 - [Backlog](Backlog)
 - [Tasks](../../issues)
 
