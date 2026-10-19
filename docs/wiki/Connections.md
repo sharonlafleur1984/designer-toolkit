@@ -98,10 +98,12 @@ Supabase is the toolkit's database, sign-in and private file storage, in one pro
   - prototypes an AI asked to add, waiting for your yes
   - private files, like uploaded HTML prototypes and screenshots, in the `toolkit-files` storage
 - **Who can read what:** access rules on every table (row-level security) let you see only your own rows. Reviewers see only the comments on prototypes they're invited to. Planned: collaborators, added by email, see everything on their prototypes, and anyone else can request access ([decision](Decisions)).
-- **Sign-in:** by email link (a magic link), no password. Supabase's built-in email sender only sends a few emails an hour, so real reviewers need a custom sender.
+- **Sign-in:** by email link (a magic link), no password, and it comes before the toolkit. Only invited people get in: open sign-ups are off, so a link asked for by an unknown email is refused. Supabase's built-in email sender only sends a few emails an hour, so real reviewers need a custom sender.
+- **Signing in on your computer:** the toolkit's `.env` holds `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` (see `.env.example`). Supabase's allowed return address includes `http://localhost:4181`, so the emailed link comes back to the toolkit.
 - **Keys:** the toolkit's build holds only the publishable key, which is safe in a browser. The secret key never goes in a repo or a build.
 - **Changes to the tables:** each change is a migration file in `supabase/migrations/` in [designer-toolkit-code](https://github.com/sharonlafleur1984/designer-toolkit-code), added by pull request.
-- **Status, Oct 14:** set up, but the toolkit doesn't use it yet. It saves to the browser until sign-in is built.
+- **Free plan:** it pauses after a week with no use. Restore it from the Supabase dashboard to sign in again.
+- **Status, Oct 19:** sign-in works ([#11](https://github.com/sharonlafleur1984/designer-toolkit/issues/11)). Prototypes and documents still save in the browser until they move to Supabase ([#12](https://github.com/sharonlafleur1984/designer-toolkit/issues/12), [#45](https://github.com/sharonlafleur1984/designer-toolkit/issues/45)).
 
 ## How a prototype gets into the toolkit
 
