@@ -5,6 +5,16 @@
 Newest first.
 
 <details>
+<summary><b>Oct 19, 2026:</b> The Supabase project and sign-in move up, so Connect GitHub can be built next</summary>
+
+- **Decided by:** Sharon
+- **Decision:** the Supabase project ([#9](https://github.com/sharonlafleur1984/designer-toolkit/issues/9)) and sign-in ([#11](https://github.com/sharonlafleur1984/designer-toolkit/issues/11)) move from Next into Now, ahead of the rest of Backend and sharing.
+- **Why:** Connect GitHub ([#58](https://github.com/sharonlafleur1984/designer-toolkit/issues/58)) keeps the GitHub App's access in Supabase, behind sign-in. Without them, private repos only work on a local `.env` token.
+- **Plans:** [Connect a prototype](Connect-a-prototype), [Roadmap](Roadmap)
+
+</details>
+
+<details>
 <summary><b>Oct 19, 2026:</b> Scenarios, Found pages, the review starts on the recommendation, and versions come from updates</summary>
 
 - **Decided by:** Sharon
