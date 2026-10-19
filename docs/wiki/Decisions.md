@@ -1,8 +1,21 @@
 # Decisions
 
-**Last updated:** October 15, 2026
+**Last updated:** October 19, 2026
 
 Newest first.
+
+<details>
+<summary><b>Oct 19, 2026:</b> Scenarios, Found pages, the review starts on the recommendation, and versions come from updates</summary>
+
+- **Decided by:** Sharon
+- **Scenarios:** personas, login states and context live under one tab, Scenarios, with each category opening to its entries. "Scenario" is the standard UX word for a persona in a situation under given conditions.
+- **Found pages:** found page states are shown per page: Default first, then Errors, Empty states and Edge cases.
+- **The review starts on the recommendation:** the toolkit sets each finding to what it thinks it is, and you change what's wrong.
+- **Versions:** one per update to the prototype, from the host or an upload. Until the toolkit hears about updates, it shows the prototype's own versions in their order. The note next to Version never names a host. Naming style is chosen at connect time.
+- **Why:** AI makes the first call and people correct it, which is faster than filling in blanks. Hosts can change, so the toolkit explains how versions work without tying itself to one.
+- **Plans:** [Connect a prototype](Connect-a-prototype), [Version history](Version-history)
+
+</details>
 
 <details>
 <summary><b>Oct 15, 2026:</b> Connecting a prototype suggests, and never converts</summary>
