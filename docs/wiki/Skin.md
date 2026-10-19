@@ -4,7 +4,7 @@
 
 **Direction:** Fireside. Autumn warmth, still water, room for the dark. The shell is always dark, and one rust accent is used rarely, so the prototype stays the brightest thing on screen.
 
-The skin is a theme in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton), not a separate system. Visual ideas, with Sharon's notes on what she loves and what loses her, are on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
+The skin is a theme in [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system), not a separate system. Visual ideas, with Sharon's notes on what she loves and what loses her, are on the [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD).
 
 ## The recipe
 

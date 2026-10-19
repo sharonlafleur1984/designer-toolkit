@@ -32,7 +32,7 @@ Each one has a recommendation in [Spec, Open decisions](Spec#open-decisions).
 | What | Link |
 |---|---|
 | How Sharon works | [how-i-work](https://github.com/sharonlafleur1984/how-i-work) |
-| Design system (the shell's theme) | [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton) |
+| Design system (the shell's theme) | [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system) |
 | Visual ideas for the skin | [FigJam: Designer Toolkit visual ideas](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) |
 | Tool research | [Research](Research) |
 | Every document | [Documents](Documents) |
