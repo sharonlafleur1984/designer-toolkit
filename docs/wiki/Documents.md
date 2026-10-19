@@ -31,6 +31,6 @@ Private files aren't here. They're listed in Sharon's private Notion document in
 | Document | Read this when |
 |---|---|
 | [FigJam: Designer Toolkit visual ideas](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) | Collecting or picking visual ideas for the skin |
-| [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton) | Working on the shell's components or tokens |
+| [lantern-code](https://github.com/sharonlafleur1984/lantern-code) | Working on the shell's components or tokens |
 
 **Adding or removing a document?** Update its row here in the same pull request, and in Sharon's private Notion index.

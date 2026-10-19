@@ -68,7 +68,7 @@
 - **What's the approved wording for a screen?** The copy table in Supabase, one row per string.
 - **What did each version change?** The versions table in Supabase, one row per deploy, with its permanent link.
 - **Who can see a prototype?** Sharon, plus invited reviewers, who see only its comments. Supabase's access rules (row-level security) enforce it.
-- **What are the components and tokens?** Storybook in [design-system-skeleton](https://github.com/sharonlafleur1984/design-system-skeleton) for the shell. Each prototype's own Storybook or code for its components.
+- **What are the components and tokens?** Storybook in [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system) for the shell. Each prototype's own Storybook or code for its components.
 - **What's the design of record for the client?** The Figma file the page states are sent to.
 - **What is the viewer looking at right now?** The shell's state, mirrored to the page address so a link reopens the same view.
 
@@ -225,7 +225,7 @@ The look itself lives on [Skin](Skin).
 
 ## Dependencies
 
-- The [design system](https://github.com/sharonlafleur1984/design-system-skeleton) adds a toolkit theme. Its Roadmap lists this under Later.
+- The [design system](https://github.com/sharonlafleur1984/lantern-design-system) adds a toolkit theme. Its Roadmap lists this under Later.
 - A Supabase project for the toolkit, created Oct 12, 2026.
 - The GitHub connection, to read a linked repo's milestones and wiki and to send changes for approval.
 - Each prototype loads a small script that lets invited reviewers comment from its shared link.

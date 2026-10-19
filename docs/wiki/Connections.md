@@ -26,7 +26,8 @@ Each piece is public or private on purpose. This table is the one to check befor
 |---|---|---|---|
 | [designer-toolkit](https://github.com/sharonlafleur1984/designer-toolkit) | Public | The toolkit's plan, decisions and this wiki | None |
 | [designer-toolkit-code](https://github.com/sharonlafleur1984/designer-toolkit-code) | Private | The toolkit's code and its Supabase setup | None. The toolkit runs on your computer. |
-| [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system) | Public | Shared components, tokens and themes | [Design system Storybook](#design-system-storybook) |
+| [lantern-code](https://github.com/sharonlafleur1984/lantern-code) | Private | The design system's code: shared components, tokens and themes | [Design system Storybook](#design-system-storybook) |
+| [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system) | Public | The design system's docs and wiki | None |
 | [summit-challenges](https://github.com/sharonlafleur1984/summit-challenges) | Private | The Summit Challenges prototype (it was Payroll Summit) | [Summit Challenges](#summit-challenges) |
 | [client-portal](https://github.com/sharonlafleur1984/client-portal) | Private | The Client Portal prototype | [Client Portal](#client-portal) |
 | [after-graduation](https://github.com/sharonlafleur1984/after-graduation) | Public | The After Graduation planner | [After Graduation](#after-graduation), not linked to this repo |
@@ -74,10 +75,10 @@ You're signed in to the Netlify command-line tool on your computer. It lists sit
 ### Design system Storybook
 
 - **Link:** https://lanterndesignsystem.netlify.app
-- **Built from:** [lantern-design-system](https://github.com/sharonlafleur1984/lantern-design-system), branch `main`
+- **Built from:** [lantern-code](https://github.com/sharonlafleur1984/lantern-code), branch `main`
 - **Updates:** on every merge to `main`. Every pull request gets a preview link, which the "Your turn" section links to.
 - **Build:** `npm run build-storybook` on Node 22, publishing `storybook-static`
-- **Status, Oct 17:** Live. Renamed on Oct 16 with the repo: the site was designsystemskeleton, the repo design-system-skeleton.
+- **Status, Oct 18:** The repo was renamed lantern-code and made private; a new public lantern-design-system holds the docs. Renamed on Oct 16 with the repo: the site was designsystemskeleton, the repo design-system-skeleton.
 
 ### After Graduation
 
