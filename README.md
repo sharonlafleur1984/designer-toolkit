@@ -2,9 +2,9 @@
 
 Updated October 19, 2026
 
-The Designer Toolkit is a quiet place for coded prototypes. It frames any prototype and keeps everything about it close: every version, persona and page state one click apart, with the notes, ideas, copy decisions and checks right beside it.
+The Designer Toolkit is a shell for coded prototypes. It can frame one or more prototypes and display multiple layouts based on: milestone, version, persona, page state, etc. Includes documentation, notes, ideation, comments, copy decisions, and more.
 
-It wears [Lantern](https://github.com/sharonlafleur1984/lantern-design-system)'s Fireside theme, so the frame stays calm and the prototype is the brightest thing on the page.
+The toolkit uses [Lantern](https://github.com/sharonlafleur1984/lantern-design-system)'s Fireside theme.
 
 > **This is a work in progress.** You can follow along in the [wiki](https://github.com/sharonlafleur1984/designer-toolkit/wiki), messy parts included.
 
