@@ -4,6 +4,7 @@
 - [Roadmap](Roadmap)
 - [Spec](Spec)
 - [Connect a prototype](Connect-a-prototype)
+- [Version history](Version-history)
 - [Backlog](Backlog)
 - [Tasks](../../issues)
 
