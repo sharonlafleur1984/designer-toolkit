@@ -28,7 +28,7 @@ Start with [`docs/wiki/Documents.md`](docs/wiki/Documents.md): every document in
 
 - `product-manager` for roadmap, backlog and status
 - `product-designer` for design, page structure and the component library
-- `ux-writer` for any words people will read
+- `ux-writer` for any words people will read, with [`docs/voice.md`](docs/voice.md) for this project's voice
 - `product-engineer` for any code work
 - `spec-writer` for the spec
 - `working-with-sharon` for how to write to Sharon
@@ -40,3 +40,4 @@ Start with [`docs/wiki/Documents.md`](docs/wiki/Documents.md): every document in
 - Project entry: Notion, Projects, "Designer toolkit"
 - Visual ideas: [FigJam board](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD)
 - Design source: Figma, Life Hub Library
+- Screens to look at and edit: the [Designer Toolkit canvas](https://claude.ai/artifact/ChthBXbHNZ1rsqmqc8RfZZ) on claude.ai (private to Sharon)

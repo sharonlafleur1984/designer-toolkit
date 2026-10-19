@@ -1,6 +1,6 @@
 # Documents
 
-**Last updated:** October 14, 2026
+**Last updated:** October 19, 2026
 
 Every document in this project's repository, and when to open it. If none of these match what you need, don't open anything else.
 
@@ -24,7 +24,9 @@ Private files aren't here. They're listed in Sharon's private Notion document in
 | Document | Read this when |
 |---|---|
 | [Tasks (GitHub Issues)](../../issues) | You need to know who's doing what |
+| [README](../../blob/main/README.md) | You need the introduction: what the toolkit is, what's ready and how it works |
 | [CLAUDE.md](../../blob/main/CLAUDE.md) | You're an AI or developer starting work |
+| [Voice](../../blob/main/docs/voice.md) | Writing anything people will read, in the toolkit or about it |
 
 ## Outside the repository
 
@@ -32,5 +34,6 @@ Private files aren't here. They're listed in Sharon's private Notion document in
 |---|---|
 | [FigJam: Designer Toolkit visual ideas](https://www.figma.com/board/62L8u38vabqutND1Cx8ZpD) | Collecting or picking visual ideas for the skin |
 | [lantern-code](https://github.com/sharonlafleur1984/lantern-code) | Working on the shell's components or tokens |
+| [Designer Toolkit canvas](https://claude.ai/artifact/ChthBXbHNZ1rsqmqc8RfZZ) (private) | Looking at the main screens, or trying a change on them before it's built |
 
 **Adding or removing a document?** Update its row here in the same pull request, and in Sharon's private Notion index.
