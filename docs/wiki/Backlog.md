@@ -1,6 +1,6 @@
 # Backlog
 
-**Last updated:** October 12, 2026
+**Last updated:** October 19, 2026
 
 Every idea not on the [Roadmap](Roadmap). Nothing here is planned until it's decided.
 
@@ -21,6 +21,7 @@ N/A. Nothing has moved off the bench yet.
 | 3 | Reviewers can't leave feedback on a version without Figma | Turn on Netlify's feedback drawer for branch deploys | Needs research |
 | 4 | Small visual changes slip through between versions | Add visual snapshots per story with Chromatic's free tier | Researched: ready for you |
 | 5 | Some people want one file they can keep, not a link | Export a PDF of every state from Figma | Needs research |
+| 6 | Designers who build prototypes in Claude Code can't use the toolkit's skills there | Ship the toolkit as a Claude Code plugin, from the code repo once it's public | Researched: ready for you |
 
 <details>
 <summary>1. Real Figma components from Storybook</summary>
@@ -65,6 +66,17 @@ N/A. Nothing has moved off the bench yet.
 - **Problem:** some reviewers want one file to keep.
 - **Options:** export frames from Figma to PDF, or print each state link to PDF.
 - **Recommendation:** only if a client asks. Figma is the deliverable.
+
+</details>
+
+<details>
+<summary>6. The toolkit as a Claude Code plugin</summary>
+
+- **Problem:** people who build prototypes in Claude Code want to use the toolkit's skills right there, next to their code, rather than visiting a separate site.
+- **What exists:** a working plugin with three skills (connect a prototype, page states, write a spec), a validator check, and install steps. It's on the \`claude-plugin\` branch of the code repo, closed as a pull request on Oct 19 and parked here.
+- **Options:** ship it from the code repo once that repo is public; ship it from its own public repo; or keep it owner-only.
+- **Evidence:** Claude Code installs plugins from a GitHub repo, and plugin commands always carry the plugin's name, like \`/designer-toolkit:connect-a-prototype\`.
+- **Recommendation:** not part of the first build. Revisit once the toolkit has the GitHub connection and Scenarios, which the skills lean on. Going public first needs the old commit with real emails scrubbed.
 
 </details>
 
